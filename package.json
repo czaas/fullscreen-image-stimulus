@@ -1,0 +1,20 @@
+{
+  "name": "full-screen-photo",
+  "version": "1.0.0",
+  "description": "A utility function to show full screen photos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx parcel serve src/index.html",
+    "build": "npx parcel build src/index.html"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.5",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "stimulus": "^1.1.1"
+  }
+}
