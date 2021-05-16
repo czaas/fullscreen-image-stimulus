@@ -3,111 +3,153 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<title>Cameron Zaas | Full screen images built with Stimulus JS</title>
 		<link rel="stylesheet" href="./styles/index.scss" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 	</head>
 	<body>
-        <div class="images">
-		<div data-controller="fsimage">
-			<img
-				data-action="click->fsimage#toggleFullScreen"
-				data-target="fsimage.image"
-				src="https://placedog.net/480/480"
-				alt="Probably a cute dog, but it is an image generator..."
-			/>
-		</div>
-        <div data-controller="fsimage">
-			<img
-				data-action="click->fsimage#toggleFullScreen"
-				data-target="fsimage.image"
-				src="https://placedog.net/480/200"
-				alt="Probably a cute dog, but it is an image generator..."
-			/>
-		</div>
-        <div data-controller="fsimage">
-			<img
-				data-action="click->fsimage#toggleFullScreen"
-				data-target="fsimage.image"
-				src="https://placedog.net/360/480"
-				alt="Probably a cute dog, but it is an image generator..."
-			/>
-		</div>
-        <div data-controller="fsimage">
-			<img
-				data-action="click->fsimage#toggleFullScreen"
-				data-target="fsimage.image"
-				src="https://placedog.net/480/480"
-				alt="Probably a cute dog, but it is an image generator..."
-			/>
-		</div>
-        <div data-controller="fsimage">
-			<img
-				data-action="click->fsimage#toggleFullScreen"
-				data-target="fsimage.image"
-				src="https://placedog.net/480/200"
-				alt="Probably a cute dog, but it is an image generator..."
-			/>
-		</div>
-        <div data-controller="fsimage">
-			<img
-				data-action="click->fsimage#toggleFullScreen"
-				data-target="fsimage.image"
-				src="https://placedog.net/360/480"
-				alt="Probably a cute dog, but it is an image generator..."
-			/>
-		</div>
-        <div data-controller="fsimage">
-			<img
-				data-action="click->fsimage#toggleFullScreen"
-				data-target="fsimage.image"
-				src="https://placedog.net/480/480"
-				alt="Probably a cute dog, but it is an image generator..."
-			/>
-		</div>
-        <div data-controller="fsimage">
-			<img
-				data-action="click->fsimage#toggleFullScreen"
-				data-target="fsimage.image"
-				src="https://placedog.net/480/200"
-				alt="Probably a cute dog, but it is an image generator..."
-			/>
-		</div>
-        <div data-controller="fsimage">
-			<img
-				data-action="click->fsimage#toggleFullScreen"
-				data-target="fsimage.image"
-				src="https://placedog.net/320/480"
-				alt="Probably a cute dog, but it is an image generator..."
-			/>
-		</div>
-        <div data-controller="fsimage">
-			<img
-				data-action="click->fsimage#toggleFullScreen"
-				data-target="fsimage.image"
-				src="https://placedog.net/480/980"
-				alt="Probably a cute dog, but it is an image generator..."
-			/>
-		</div>
-        <div data-controller="fsimage">
-			<img
-				data-action="click->fsimage#toggleFullScreen"
-				data-target="fsimage.image"
-				src="https://placedog.net/720/200"
-				alt="Probably a cute dog, but it is an image generator..."
-			/>
-		</div>
-        <div data-controller="fsimage">
-			<img
-				data-action="click->fsimage#toggleFullScreen"
-				data-target="fsimage.image"
-				src="https://placedog.net/160/480"
-				alt="Probably a cute dog, but it is an image generator..."
-			/>
-		</div>
-    </div>
-
-    <script src="./js/app.js" defer></script>
+		<header>
+			<div data-controller="fsimage">
+				<img
+					src="images/splash-trees.jpg"
+					class="splash"
+					alt="Trees in a fog"
+					data-action="click->fsimage#toggleFullScreen"
+					data-target="fsimage.image"
+				/>
+			</div>
+		</header>
+		<main>
+			<h1 class="text">Fullscreen Images Plugin</h1>
+			<div data-controller="fsimage" class="inline-image fr">
+				<img
+					src="images/mountain.jpg"
+					alt="buildings"
+					data-action="click->fsimage#toggleFullScreen"
+					data-target="fsimage.image"
+				/>
+			</div>
+			<p class="text">
+				Select an image to make it go fullscreen. You can close it by clicking anywhere on the image or the veil
+				or by using the escape key on your keyboard. I build this to simulate how Google Photos works, when you select an image to enlarge it looks like it
+				grows from the location where the image. This is using
+				<a href="https://stimulus.hotwire.dev/" target="_blank">Stimulus JS</a> which I saw on
+				<a href="https://bestofjs.org/" target="_blank">best of js</a> and it's simple architecture inspired me
+				to build something.
+			</p>
+			<p class="text">
+				Check out the <a href="https://github.com/czaas/fullscreen-image-stimulus" target="_blank">source code</a> for this page or you can checkout some of my other work at <a href="https://czaas.dev" target="_blank">czaas.dev</a> or on <a href="https://github.com/czaas" target="_blank">github</a>. 
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ab blanditiis velit rerum veniam fugit,
+				consequuntur quas deserunt, facilis enim, vel praesentium dolorem sapiente! Nostrum quia laborum aperiam
+				eaque. Possimus, sed iste odio vel repudiandae explicabo nobis, neque, veniam dicta ex ab dolores earum
+				perferendis.
+			</p>
+			<p>
+				Delectus vitae maiores corrupti unde veniam nemo quaerat ex dolorum repellat est temporibus quibusdam
+				distinctio officiis accusantium ipsum corporis ducimus, deleniti sequi? Sint voluptas possimus quas
+				harum quae, voluptatibus perferendis sunt consectetur numquam. Fuga earum possimus quasi, aliquid dolor
+				pariatur molestiae voluptate dolorem. Alias, adipisci?
+			</p>
+			<p>
+				Ad debitis illo blanditiis est corporis repudiandae qui ipsam officiis aspernatur, totam tempore
+				repellendus, deserunt obcaecati praesentium facere, deleniti ipsa! Fugit, ducimus exercitationem? Iusto
+				illo officiis reiciendis, aperiam, earum saepe porro molestiae alias neque quod optio quaerat distinctio
+				illum nemo accusantium, perferendis ab quas ipsam!
+			</p>
+			<p>
+				Quod animi perferendis totam, ea veritatis molestias nesciunt fugiat similique, sit, dicta inventore
+				perspiciatis! Obcaecati, est. Possimus corrupti cum unde quis voluptatum magni aliquid reprehenderit,
+				ipsam maxime pariatur asperiores soluta iste dolore, labore repellendus totam earum inventore
+				dignissimos, libero fugit! Sint nostrum omnis veritatis quis?
+			</p>
+			<p>
+				Corporis quod dolorem aperiam magni perferendis! Nesciunt commodi autem, dolorem fugit maxime dolores
+				excepturi qui suscipit, iusto similique, quo vero. Aspernatur, dicta. Tempore tenetur impedit hic ipsam,
+				quaerat aliquid velit voluptas error natus ullam molestias, accusamus quas. Reprehenderit architecto
+				blanditiis, voluptatibus eos hic natus nostrum.
+			</p>
+			<p>
+				At rerum tenetur, ab libero recusandae quae? Repellendus, facilis? Doloribus ad, deleniti quam
+				perferendis a molestias praesentium excepturi, rem facilis quaerat exercitationem ipsa nihil pariatur
+				voluptas sapiente. Ullam saepe eius quia quibusdam accusantium aliquid dolores earum expedita sint
+				tempore, ipsam alias dolorem consequuntur modi dignissimos?
+			</p>
+			<div class="gallery-grid">
+				<div data-controller="fsimage">
+					<img
+						src="images/surfing.jpg"
+						alt="buildings"
+						data-action="click->fsimage#toggleFullScreen"
+						data-target="fsimage.image"
+					/>
+				</div>
+				<div data-controller="fsimage">
+					<img
+						src="images/jelly-fish.jpg"
+						alt="buildings"
+						data-action="click->fsimage#toggleFullScreen"
+						data-target="fsimage.image"
+					/>
+				</div>
+				<div data-controller="fsimage">
+					<img
+						src="images/wave.jpg"
+						alt="buildings"
+						data-action="click->fsimage#toggleFullScreen"
+						data-target="fsimage.image"
+					/>
+				</div>
+			</div>
+			<p>
+				Esse ratione beatae omnis at placeat quod non quisquam earum ex impedit, reiciendis provident est,
+				explicabo minima qui aliquam doloribus! Beatae laborum adipisci repudiandae repellat. Repellendus quos
+				rerum consectetur perferendis, quod veniam eveniet eos, cupiditate doloribus minima vel, pariatur natus
+				tempore aliquid culpa corporis nisi?
+			</p>
+			<p>
+				Dolorem magnam dignissimos maiores iusto hic iste est numquam, nihil accusamus itaque voluptatem
+				quibusdam adipisci tenetur aut ipsa, tempore vitae unde recusandae facilis architecto perspiciatis
+				reprehenderit? Ducimus tempore impedit eligendi accusantium molestias natus blanditiis! Sapiente
+				laudantium eius voluptatum nostrum praesentium incidunt illo saepe dolore deleniti.
+			</p>
+			<div data-controller="fsimage" class="inline-image fl">
+				<img
+					src="images/building.jpg"
+					alt="buildings"
+					data-action="click->fsimage#toggleFullScreen"
+					data-target="fsimage.image"
+				/>
+			</div>
+			<p>
+				Ex libero accusamus nemo a assumenda explicabo aliquam provident architecto mollitia veniam corrupti
+				ipsam tempora, impedit temporibus asperiores veritatis? Modi blanditiis nisi voluptatibus ab eos esse
+				consequuntur quae, inventore dolore tempora, id ipsum, qui ipsa obcaecati repellat. Sed natus ut amet
+				sint animi at excepturi?
+			</p>
+			<p>
+				Nisi maiores aut eaque voluptatem harum assumenda quisquam corrupti perferendis magnam tempora, eos in
+				excepturi, eum enim dolore cupiditate alias, quae voluptatum delectus maxime repudiandae distinctio
+				facilis fuga! Consequatur, accusamus vero temporibus labore perspiciatis doloremque at quo. Laboriosam,
+				provident earum velit consequuntur tenetur voluptas eveniet.
+			</p>
+			<p>
+				Iusto ducimus nihil officiis neque eaque cupiditate voluptatem necessitatibus ratione labore facere
+				aspernatur cum tempora ipsa earum nobis, molestiae dolores maxime deleniti expedita aut quidem quos
+				veritatis. Asperiores ipsa tenetur velit exercitationem excepturi eius nisi inventore, aut voluptatibus
+				earum quae eum rem consequatur delectus mollitia?
+			</p>
+			<p>
+				Sunt animi blanditiis ea nesciunt commodi accusantium ratione? Facere sint ab dolore eaque. Dignissimos
+				sequi, perferendis modi veniam ea iusto, quia, eum dolorem molestiae reprehenderit expedita magnam
+				voluptatum. Sunt placeat ipsam molestiae quasi quaerat porro magni libero, itaque quibusdam sint nemo
+				numquam ab aperiam? Amet?
+			</p>
+		</main>
+        <script src="./js/app.js" defer></script>
 	</body>
 </html>

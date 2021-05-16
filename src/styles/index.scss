@@ -1,13 +1,79 @@
-.images {
+* {
+  box-sizing: border-box;
+}
+html {
+  --fg: #000;
+  --fg-faded: #666;
+  --bg: #fff;
+  --primary: #4ea9f8;
+  --primary-variant: #4ea9f8; 
+}
+@media (prefers-color-scheme: dark) { 
+  html {
+    --fg: #fff;
+    --fg-faded: #a1a1a1;
+    --bg: #000;
+  }
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg-faded);
+  font-family: 'Open Sans', sans-serif;
+}
+a {
+  color: var(--primary);
+}
+a:visited {
+  color: var(--primary-variant)
+}
+.text {
+  color: var(--fg);
+}
+main {
+  padding: 16px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+h1 {
+  margin: 16px 32px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+img {
+  max-width: 100%;
+}
+.splash {
+  max-width: 100%;
+}
+.fr, .fl {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.fr {
+  float: right;
+  margin-left: 16px;
+}
+.fl {
+  float: left;
+  margin-right: 16px;
+}
+.inline-image {
+  width: 220px;
+  max-width: 45%;
+}
+
+.gallery-grid {
   display: grid;
-  grid-template-columns: 100%;
-  grid-template-columns: repeat(2, 33%);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  width: calc(100% + 32px);
+  margin: 0 -16px;
 }
-.images img {
-    max-width: 100%;
-}
+
 @media screen and (min-width: 640px) {
-  .images {
-    grid-template-columns: repeat(3, 33%);
+  .gallery-grid {
+    width: 100%;
+    margin: 0;
   }
 }

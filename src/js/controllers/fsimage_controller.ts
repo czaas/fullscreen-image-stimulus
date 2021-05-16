@@ -131,7 +131,7 @@ export default class FullScreenImageController extends Controller {
 			this.animatedContainer.style["top"] = `0`;
 			this.animatedContainer.style["left"] = `0`;
 			this.imageTarget.style["opacity"] = ".1";
-			this.veil.style["background"] = `rgba(0,0,0,.7)`;
+			this.veil.style["background"] = `rgba(0,0,0,.9)`;
 		}, this.transitionTimeMs);
 	}
 }
